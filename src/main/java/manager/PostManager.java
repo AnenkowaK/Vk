@@ -1,4 +1,4 @@
-package Manager;
+package manager;
 import domain.VkPost;
 
 import java.time.LocalTime;

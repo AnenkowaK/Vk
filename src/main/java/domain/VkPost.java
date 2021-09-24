@@ -7,10 +7,10 @@ public class VkPost {
     private int ownerId;
     private String text;
     private LocalTime dateTime;
-    private int likes;
     private int reposts;
     private int views;
-    private VkComment[] comments;
+    private VkComment comment;
+    private VkLike like;
 
     public int getId() {
         return id;
@@ -44,14 +44,6 @@ public class VkPost {
         this.dateTime = dateTime;
     }
 
-    public int getLikes() {
-        return likes;
-    }
-
-    public void setLikes(int likes) {
-        this.likes = likes;
-    }
-
     public int getReposts() {
         return reposts;
     }
@@ -66,13 +58,5 @@ public class VkPost {
 
     public void setViews(int views) {
         this.views = views;
-    }
-
-    public VkComment[] getComments() {
-        return comments;
-    }
-
-    public void setComments(VkComment[] comments) {
-        this.comments = comments;
     }
 }
